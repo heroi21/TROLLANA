@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/TROLLANA/">
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="trollanaa">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>trollanaa</title>
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="google-signin-client_id" content="1002181698459-7trnt04bd844ppcjg82r0n2lfmr50pcj.apps.googleusercontent.com">
+
+  <script type="module">
+    // Importar funciones específicas desde el CDN
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
+    // Puedes importar otros servicios si los necesitas inicializar aquí, como Firestore o Storage
+    // import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-firestore.js";
+    // import { getStorage } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-storage.js";
+
+
+    // Tu objeto de configuración de Firebase para tu app web
+    const firebaseConfig = {
+      apiKey: "AIzaSyCjEseS8LUx1qXWsSD2edmGDqhHdl5QalQ",
+      authDomain: "heroi21.github.io", // <-- Correcto para GitHub Pages
+      projectId: "trollana-c86fa",
+      storageBucket: "trollana-c86fa.firebasestorage.app",
+      messagingSenderId: "1002181698459",
+      appId: "1:1002181698459:web:96de8dc2b12dafbd8a373e"
+    };
+
+    // Inicializar Firebase
+    const app = initializeApp(firebaseConfig);
+    // Obtener instancias de los servicios que vas a usar
+    const auth = getAuth(app);
+    // Puedes obtener otras instancias aquí si importaste los servicios:
+    // const firestore = getFirestore(app);
+    // const storage = getStorage(app);
+
+    // Opcionalmente, puedes exponer estas instancias a nivel global si tu código Flutter las necesita así
+    // aunque el enfoque recomendado es usar los paquetes de FlutterFire directamente.
+    // window.firebaseApp = app;
+    // window.firebaseAuth = auth;
+    // window.firebaseFirestore = firestore;
+    // window.firebaseStorage = storage;
+
+  </script>
+
+
+</head>
+<body>
+<script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
